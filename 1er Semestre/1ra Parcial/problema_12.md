@@ -1,2 +1,3 @@
-## Dado el año de nacimiento, indique cuatos años va a cumplir una persona el siguiente año  
+### Genera la siguiente secuencia, de forma infinita: 0101010101...  
+  
 ![problema_12](img/problema_12.png)
