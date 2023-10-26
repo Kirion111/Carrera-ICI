@@ -15,9 +15,9 @@ def getGrades():
         j = j + 1
         message.value = f"Escribe la calificacion del alumno no. {j + 1}°"
         if (j >= alumnos):
-            message.value = ""
-            App.info(daApp, title="Resultado", text=f"La cantidad de alumnos que pasaron la materia es de {alumn_aprob}")
             j = 0
+            message.value = f"Escribe la calificacion del alumno no. {j + 1}°"
+            App.info(daApp, title="Resultado", text=f"La cantidad de alumnos que pasaron la materia es de {alumn_aprob}")
             alumn_aprob = 0
     else:
         App.info(daApp,title="Error:", text="Ingrese un numero valido")
