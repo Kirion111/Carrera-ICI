@@ -56,7 +56,7 @@ message = Text(daApp,text="Ingrese su sueldo base")
 income = TextBox(daApp, width=50, text="")
 btnn = PushButton(daApp, command=getIncome, text="Ingresar")
 add = PushButton(daApp, command=addIncome, text="Agregar otro empleado")
-end = PushButton(daApp, command=endIt, text="Terminar y calcular Calcular")
+end = PushButton(daApp, command=endIt, text="Terminar y Calcular")
 add.visible = False
 end.visible = False
 

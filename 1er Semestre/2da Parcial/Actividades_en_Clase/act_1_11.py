@@ -23,7 +23,7 @@ def setAumount():
     outPut.visible = True
 
 daApp = App("Generador binario", 420, 180, "auto")
-text = Text(daApp, text="Cuantas veces deseas que se repita la secuancia '01'?")
+text = Text(daApp, text="Cuantas veces deseas que se repita la secuencia '01'?")
 number = TextBox(daApp, width=50, text="")
 btnn = PushButton(daApp, command=setAumount, text="Ingresar")
 outPut = Text(daApp, text=f"")
