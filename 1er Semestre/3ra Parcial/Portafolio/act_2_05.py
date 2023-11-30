@@ -1,16 +1,8 @@
-import random
+from arrayManager import arrayManager
+aManager = arrayManager()
 
-def randomInt(min:int, max:int)->int:
-    return random.randint(min, max)
-
-def createArray(lenght:int)->list:
-    arr:list = []
-    for i in range(0, lenght):
-        arr.append(randomInt(0, 100))
-
-    return arr
-
-arr = createArray(int(input("Ingresa el tamaño del arreglo: ")))
+aManager.defineRange(1, 100)
+arr = aManager.createArray(int(input("Ingresa el tamaño del arreglo: ")))
 
 text:str = "["
 print(f"Inicio: {arr}")

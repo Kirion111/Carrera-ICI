@@ -1,16 +1,7 @@
-import random
+from arrayManager import arrayManager as A_Manager
+manager = A_Manager()
 
-def randomInt(min:int, max:int)->int:
-    return random.randint(min, max)
-
-def createMatrix(n:int, m:int):
-    mat:list = []
-    for i in range(0, n):
-        mat_2:list = []
-        mat.append(mat_2)
-        for j in range(0, m):
-            mat[i].append(randomInt(0, 100))
-    return mat
+manager.defineRange(1, 100)
 n = 0
 m = 0
 
@@ -24,7 +15,8 @@ while m <= 0:
     if m <= 0:
         print("El numero de columnas debe ser mayor a 0")
 
-mat = createMatrix(n, m)
+mat = manager.createMatrix(n, m)
+A_Manager.printMatrix(mat)
 suma = 0
 
 for i in range(0, len(mat)):
